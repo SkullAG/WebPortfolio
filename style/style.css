@@ -1,0 +1,93 @@
+html{
+	image-rendering: pixelated;
+
+	background-image:  url("../images/cielo.png");
+
+	background-size: 40px;
+	//border: 10px solid black;
+	//height: 1690px;
+	min-width: 720px;
+	animation: FondoNevado 10s linear infinite;
+}
+@keyframes FondoNevado{
+	from { background-position: 0 0; }
+	to { background-position: 0 40px; }
+}
+.MetalBox{
+	float: unset;
+	//position: relative;
+	//margin-left: -10px;
+	//margin-top: -10px;
+	background-clip: content-box;
+
+	margin-left: 0px;
+	margin-right: 0px;
+	
+	//width: 96%;
+	background-color: #838383;
+	background-size: contain;
+
+	border: 100px solid;
+	border-width: 20px 20px 20px 20px;
+	border-image-source: url("../images/MetalPlate.png");
+	border-image-slice: 8 8 8 8;
+	
+}
+#MyName{
+	float: left;
+}
+#HeadOfPage{
+	height: 80px;
+
+	overflow-y: scroll;
+}
+.Title{
+	font-family: sans-serif;
+}
+.textoNormal{
+	font-family: sans-serif;
+	
+	//margin-right: 0px;
+	//float: left;
+}
+.icon{
+	float: right;
+	width: 80px;
+	margin-left: 10px;
+}
+#tweeter{
+	//background-image: url("../images/Tweet.png")
+}
+.ground{
+	float: unset;
+	background-image:  url("../images/Ground.png");
+	background-size: 80px;
+	//float: right;
+	height: 80px;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	//z-index: 10;
+}
+.cloud{
+	margin: 20px;
+	background-color: white;
+	background-clip: content-box;
+
+	width: 50%;
+
+	border: 100px solid;
+	border-width: 20px 20px 20px 20px;
+	border-image-source: url("../images/Cloud.png");
+	border-image-slice: 8 8 8 8;
+	border-image-repeat: round;
+	//height: 1000px;
+}
+@keyframes BoxTank{
+	from { margin-left: -10%;}
+	to { margin-left: 100%;}
+}
+#boxtank{
+	height: 80px;
+	animation: BoxTank 5s linear infinite;
+}
